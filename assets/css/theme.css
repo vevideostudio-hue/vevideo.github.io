@@ -720,7 +720,7 @@ ul.menu-list .sub-menu > li.active > a {
 /* logo mobile */
 .logo-mobile {
 	position: absolute;
-	top: 10px;
+	top: 6px;
 	left: 20px;
 	opacity: 1;
 	z-index: 2;
@@ -731,7 +731,7 @@ ul.menu-list .sub-menu > li.active > a {
 	transition: all 0.2s ease-in-out;
 }
 .logo-mobile img {
-	max-height: 40px;
+	max-height: 50px;
 }
 
 /* Mobile menu trigger (hamburger button) */
@@ -2786,6 +2786,14 @@ ul.isotope-filter-links > li > a.active {
 .gs-sidebar-inner {
 	overflow: auto;
 	padding: 15px;
+}
+@media (max-width: 1199px) {
+	/* On touch devices, let the page scroll instead of trapping
+	   scroll inside the white portfolio sidebar panel. */
+	.gs-sidebar .gs-sidebar-inner {
+		overflow: visible;
+		max-height: none;
+	}
 }
 
 /* gallery single sidebar info */
